@@ -1,0 +1,60 @@
+.card {
+  height: 20em;
+  width: 20em;
+  border: .5px solid rgb(220, 214, 214);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.image_container {
+    height: 13em;
+    width: 18em;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+  flex-wrap: wrap;
+  height: 6em;
+  width: 18em;
+  display: flex;
+  overflow: hidden;
+}
+
+.details__name {
+  flex: 1 1 100%;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details__city, .details__owner, .details__price, .details__type {
+  background: #ffffff;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.details__city, .details__type {
+  flex: 1 1 calc(50% - 10px);
+}
+
+.details__owner {
+  flex: 1 1 calc(50% - 10px);}
+
+.details__price {
+  flex: 1 1 calc(50% - 10px);
+}
